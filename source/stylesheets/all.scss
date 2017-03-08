@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+$yellow: #fddc2f;
+
+// typefaces, fonts
+
+@font-face {
+  font-family: 'LubalinGraphStd-Demi';
+          src: url('webfonts/3336A8_0_0.eot');
+          src: url('webfonts/3336A8_0_0.eot?#iefix') format('embedded-opentype'),
+               url('webfonts/3336A8_0_0.woff2') format('woff2'),
+               url('webfonts/3336A8_0_0.woff') format('woff'),
+               url('webfonts/3336A8_0_0.ttf') format('truetype');
+}
+
+$graph-demi: "LubalinGraphStd-Demi", serif;
+
+@font-face {
+  font-family: 'LubalinGraphStd-Book';
+    src: url('webfonts/3336A8_1_0.eot');
+    src: url('webfonts/3336A8_1_0.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/3336A8_1_0.woff2') format('woff2'),
+         url('webfonts/3336A8_1_0.woff') format('woff'),
+         url('webfonts/3336A8_1_0.ttf') format('truetype');
+}
+
+$graph: 'LubalinGraphStd-Book', serif;
+
+body {
+  text-align: center;
+  font-family: $graph-demi;
+  background-color: $yellow;
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: -1px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  padding: 350px 0 10px;
+  margin: 0; }
+
+.doc {
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666;
+}
+
