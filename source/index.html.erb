@@ -1,10 +1,71 @@
 ---
-title: Welcome to Middleman
+title: Maupin Development
 ---
 
+<nav>
+  <div class="nav-wrapper">
+    <ul id="nav-mobile" class="left">
+      <li><a href="#"><%= image_tag 'Logo.svg', class: 'logo' %></li>
+      <li><a href="#" id="link-projects">Projects</a></li>
+      <li><a href="#partners" id="link-partners">Partners</a></li>
+      <li><a href="#" id="link-about">About</a></li>
+      <li><a href="#" id="link-contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="welcome">
-  <h1>Middleman is Watching</h1>
+  <h1>Maupin Development</h1>
   <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+    Over 30 years of experience in the South Bay.<br>
+    <%= link_to " Click Here for Maupin Realtors", "http://maupinrealtors.com/" %>
   </p><!-- .doc -->
+  <a href="#projects">
+    <%= image_tag 'Arrow.svg', id: 'arrow' %>
+    </a>
+  <div>
+    <%= image_tag 'Blueprint.svg', class: 'blueprint' %>
+  </div>
 </div><!-- .welcome -->
+
+<div id="projects" class="section-wrapper">
+  <h2>Completed Projects</h2>
+</div>
+
+<div id="partners" class="section-wrapper grey">
+  <h2>Partners</h2>
+  <div class="client-wrapper">
+    <div class="row">
+      <div class="client">
+        <div class="bug-round"></div>
+        <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum.</p>
+      </div>
+      <div class="client">
+        <div class="bug-round"></div>
+        <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="client">
+        <div class="bug-round"></div>
+        <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum.</p>
+      </div>
+      <div class="client">
+        <div class="bug-round"></div>
+        <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum.</p>
+      </div>
+    </div>
+    <div class="client">
+      <div class="bug-round"></div>
+      <p>Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum, Lorem ipsum.</p>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="section-wrapper about">
+  <h2>About</h2>
+</div>
+
+<div id="contact" class="section-wrapper grey">
+  <h2>Contact</h2>
+</div>

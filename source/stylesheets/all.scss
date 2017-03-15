@@ -27,33 +27,174 @@ $graph-demi: "LubalinGraphStd-Demi", serif;
 $graph: 'LubalinGraphStd-Book', serif;
 
 body {
-  text-align: center;
   font-family: $graph-demi;
-  background-color: $yellow;
+  overflow-x: hidden;
 }
 
 h1 {
   color: black;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 55px;
   letter-spacing: -1px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
   padding: 350px 0 10px;
-  margin: 0; }
+  margin: 0;
+}
+
+h1::after {
+  content: '';
+  width: 48px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  margin-top: 80px;
+  left: 50px;
+}
+
+a {
+  apperance: none;
+  text-decoration: none;
+  color: black;
+  font-family: $graph;
+}
+
+nav {
+
+  .nav-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: $yellow;
+    position: fixed;
+    z-index: 1010101;
+  } // end nav-wrapper
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 12px 0;
+    list-style-type: disc;
+    li {
+      line-height: 1;
+      list-style-type: none;
+      padding: 4px 24px 0 24px;
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+    li:nth-child(1){
+      padding-left: 0px;
+    }
+  } // End ul
+
+  .logo {
+    width: 100px;
+    margin-top: -10px;
+  } // End logo
+  // End nav
+}
+
+.welcome {
+  background-color: $yellow;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+
+  #arrow {
+    position: absolute;
+    bottom: 48px;
+    cursor: pointer;
+    padding: 16px;
+    margin: -16px;
+    height: 55px;
+  }
+
+  .blueprint {
+    transform: rotate(-31deg);
+    width: 1820px;
+  }
+
+} //end welcome
+
+.section-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  padding: 50px;
+
+  h2 {
+    
+  }
+
+  h2::after {
+  content: '';
+  width: 48px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  margin-top: 40px;
+  left: 50px;
+  }
+} // end section-wrapper
+
+.grey {
+  background-color: #EAEEEE;
+}
 
 .doc {
   font-size: 14px;
-  margin: 0; }
+  margin: 0;
+  margin-top: 35px;
+}
+  
   .doc:before,
   .doc:after {
     opacity: .2;
     padding: 6px;
     font-style: normal;
     position: relative;
-    content: "•"; }
+  }
+
   .doc a {
-    color: rgba(0, 0, 0, 0.3); }
+    color: rgba(0, 0, 0, 0.3);
+  }
     .doc a:hover {
       color: #666;
+} // end doc
+
+.client-wrapper {
+  min-width: 100%;
+  padding-top: 55px;
+
+  p {
+    font-family: $graph;
+  }
+}
+
+.row {
+  -webkit-box-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.client {
+  margin-left: 0;
+  position: relative;
+  width: 45%;
+  box-sizing: border-box;
+  margin-bottom: 156px;
+}
+
+.bug-round {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: black;
 }
 
