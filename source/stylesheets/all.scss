@@ -29,6 +29,7 @@ $graph: 'LubalinGraphStd-Book', serif;
 body {
   font-family: $graph-demi;
   overflow-x: hidden;
+  max-width: 1440px;
 }
 
 h1 {
@@ -180,7 +181,7 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   -webkit-box-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .client {
@@ -189,6 +190,7 @@ nav {
   width: 45%;
   box-sizing: border-box;
   margin-bottom: 156px;
+  padding-right: 40px;
 }
 
 .bug-round {
@@ -196,5 +198,5 @@ nav {
   height: 35px;
   border-radius: 100%;
   background-color: black;
-}
+} // place holder for client logos.
 
