@@ -1609,16 +1609,16 @@ particlesJS('particles-js',
       }
     },
     "color": {
-      "value": "#fff"
+      "value": "#000000"
     },
     "shape": {
       "type": "polygon",
       "stroke": {
         "width": 1,
-        "color": "#fff"
+        "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 7
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
@@ -1627,7 +1627,7 @@ particlesJS('particles-js',
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": .1,
       "random": false,
       "anim": {
         "enable": false,
@@ -1649,8 +1649,8 @@ particlesJS('particles-js',
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#fff",
-      "opacity": 0.4,
+      "color": "#000000",
+      "opacity": 0.5,
       "width": 1
     },
     "move": {
@@ -1664,7 +1664,7 @@ particlesJS('particles-js',
       "attract": {
         "enable": false,
         "rotateX": 600,
-        "rotateY": 1200
+        "rotateY": -1200
       }
     }
   },
@@ -1673,7 +1673,7 @@ particlesJS('particles-js',
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
@@ -1696,7 +1696,7 @@ particlesJS('particles-js',
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 150,
         "duration": 0.4
       },
       "push": {

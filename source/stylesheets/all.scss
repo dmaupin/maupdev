@@ -70,6 +70,10 @@ a {
   font-family: $graph;
 }
 
+p {
+  font-family: $graph;
+}
+
 nav {
 
   .nav-wrapper {
@@ -112,6 +116,7 @@ nav {
   width: 100vw;
   height: 100vh;
   padding: 50px;
+  margin-top: -400px;
 
   #arrow {
     position: absolute;
@@ -129,6 +134,19 @@ nav {
 
 } //end welcome
 
+.about {
+
+  p {
+    text-align: justify;
+    column-count: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+}
+
 /* ---- particles.js container ---- */
 
 #particles-js{
@@ -143,7 +161,7 @@ nav {
 
 .section-wrapper {
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-color: #FFFFFF;
   padding: 50px;
 
