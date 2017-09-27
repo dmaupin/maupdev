@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$yellow: #fddc2f;
+$yellow: #FBC200;
 
 // typefaces, fonts
 
@@ -46,7 +46,7 @@ canvas{
 
 h1 {
   color: black;
-  font-weight: bold;
+  font-family: 'LubalinGraphStd-Demi';
   font-size: 55px;
   letter-spacing: -1px;
   padding: 350px 0 10px;
@@ -61,6 +61,11 @@ h1::after {
   position: absolute;
   margin-top: 80px;
   left: 50px;
+}
+
+h2 {
+  color: white;
+  margin-top: 1.5em;
 }
 
 a {
@@ -85,7 +90,7 @@ nav {
     padding: 50px;
     background-color: $yellow;
     position: fixed;
-    z-index: 1010101;
+    z-index: 100;
   } // end nav-wrapper
 
   ul {
@@ -119,6 +124,15 @@ nav {
   margin-top: -400px;
 
   #arrow {
+    position: absolute;
+    bottom: 48px;
+    cursor: pointer;
+    padding: 16px;
+    margin: -16px;
+    height: 25px;
+  }
+
+  #envelope {
     position: absolute;
     bottom: 48px;
     cursor: pointer;
@@ -241,3 +255,22 @@ nav {
   background-color: black;
 } // place holder for client logos.
 
+.tooltip {
+  display: none;
+  position: relative;
+  width: 120px;
+  color: white;
+  background-color: black;
+  font-family: 'LubalinGraphStd-Book';
+  padding: 5px 5px 2px 5px;
+  margin: 5px;
+  border-radius: 2.5px;
+  text-align: center;
+  z-index: 101;
+}
+
+#particles-js:hover .tooltip {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
