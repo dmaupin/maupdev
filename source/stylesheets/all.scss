@@ -1,6 +1,10 @@
 @charset "utf-8";
 
-$yellow: #FBC200;
+$yellow: #FFCF0B;
+
+::selection {
+  background: none; // WebKit/Blink Browsers 
+}
 
 // typefaces, fonts
 
@@ -33,6 +37,9 @@ html,body {
   font-family: $graph-demi;
   overflow-x: hidden;
   max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  transition: max-width 0.25s ease-out;
 }
 
 html{
@@ -42,6 +49,8 @@ html{
 canvas{
   display:block;
   vertical-align:bottom;
+  height: 100%;
+  position: absolute;
 }
 
 h1 {
@@ -49,7 +58,7 @@ h1 {
   font-family: 'LubalinGraphStd-Demi';
   font-size: 55px;
   letter-spacing: -1px;
-  padding: 350px 0 10px;
+  padding: 150px 0 10px;
   margin: 0;
 }
 
@@ -60,7 +69,7 @@ h1::after {
   background: #000000;
   position: absolute;
   margin-top: 80px;
-  left: 50px;
+  margin-left: -570px;
 }
 
 h2 {
@@ -88,7 +97,7 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     padding: 50px;
-    background-color: $yellow;
+    // background-color: $yellow;
     position: fixed;
     z-index: 100;
   } // end nav-wrapper
@@ -117,11 +126,18 @@ nav {
   // End nav
 }
 
+.shadow {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.shadow:hover {
+  transform: translateY(-2px);
+}
+
 .welcome {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 50px;
-  margin-top: -400px;
 
   #arrow {
     position: absolute;
@@ -263,10 +279,11 @@ nav {
   background-color: black;
   font-family: 'LubalinGraphStd-Book';
   padding: 5px 5px 2px 5px;
-  margin: 5px;
+  margin: 15px;
   border-radius: 2.5px;
   text-align: center;
   z-index: 101;
+  left: 100%;
 }
 
 #particles-js:hover .tooltip {
